@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DE4401B1369A4CF0016E5BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401A1369A4CF0016E5BF /* UIKit.framework */; };
+		4DE4401D1369A4CF0016E5BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401C1369A4CF0016E5BF /* Foundation.framework */; };
+		4DE4401F1369A4CF0016E5BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401E1369A4CF0016E5BF /* CoreGraphics.framework */; };
+		4DE440251369A4CF0016E5BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DE440231369A4CF0016E5BF /* InfoPlist.strings */; };
+		4DE440281369A4CF0016E5BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE440271369A4CF0016E5BF /* main.m */; };
+		4DE4402B1369A4CF0016E5BF /* wherewereweAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4402A1369A4CF0016E5BF /* wherewereweAppDelegate.m */; };
+		4DE4402E1369A4CF0016E5BF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE4402C1369A4CF0016E5BF /* MainWindow.xib */; };
+		4DE440311369A4CF0016E5BF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE440301369A4CF0016E5BF /* FirstViewController.m */; };
+		4DE440341369A4CF0016E5BF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE440331369A4CF0016E5BF /* SecondViewController.m */; };
+		4DE440371369A4CF0016E5BF /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE440351369A4CF0016E5BF /* FirstView.xib */; };
+		4DE4403A1369A4CF0016E5BF /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE440381369A4CF0016E5BF /* SecondView.xib */; };
+		4DE440411369A4D00016E5BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401A1369A4CF0016E5BF /* UIKit.framework */; };
+		4DE440421369A4D00016E5BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401C1369A4CF0016E5BF /* Foundation.framework */; };
+		4DE440431369A4D00016E5BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401E1369A4CF0016E5BF /* CoreGraphics.framework */; };
+		4DE4404B1369A4D00016E5BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DE440491369A4D00016E5BF /* InfoPlist.strings */; };
+		4DE4404E1369A4D00016E5BF /* wherewereweTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4DE4404D1369A4D00016E5BF /* wherewereweTests.h */; };
+		4DE440501369A4D00016E5BF /* wherewereweTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4404F1369A4D00016E5BF /* wherewereweTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DE440441369A4D00016E5BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE4400D1369A4CF0016E5BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE440151369A4CF0016E5BF;
+			remoteInfo = wherewerewe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DE440161369A4CF0016E5BF /* wherewerewe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wherewerewe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE4401A1369A4CF0016E5BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4DE4401C1369A4CF0016E5BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4DE4401E1369A4CF0016E5BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4DE440221369A4CF0016E5BF /* wherewerewe-Info.plist */ = {isa = PBXFileReference; path = "wherewerewe-Info.plist"; sourceTree = "<group>"; };
+		4DE440241369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DE440261369A4CF0016E5BF /* wherewerewe-Prefix.pch */ = {isa = PBXFileReference; path = "wherewerewe-Prefix.pch"; sourceTree = "<group>"; };
+		4DE440271369A4CF0016E5BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DE440291369A4CF0016E5BF /* wherewereweAppDelegate.h */ = {isa = PBXFileReference; path = wherewereweAppDelegate.h; sourceTree = "<group>"; };
+		4DE4402A1369A4CF0016E5BF /* wherewereweAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wherewereweAppDelegate.m; sourceTree = "<group>"; };
+		4DE4402D1369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4DE4402F1369A4CF0016E5BF /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		4DE440301369A4CF0016E5BF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		4DE440321369A4CF0016E5BF /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		4DE440331369A4CF0016E5BF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4DE440361369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		4DE440391369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		4DE440401369A4CF0016E5BF /* wherewereweTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wherewereweTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE440481369A4D00016E5BF /* wherewereweTests-Info.plist */ = {isa = PBXFileReference; path = "wherewereweTests-Info.plist"; sourceTree = "<group>"; };
+		4DE4404A1369A4D00016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DE4404C1369A4D00016E5BF /* wherewereweTests-Prefix.pch */ = {isa = PBXFileReference; path = "wherewereweTests-Prefix.pch"; sourceTree = "<group>"; };
+		4DE4404D1369A4D00016E5BF /* wherewereweTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wherewereweTests.h; sourceTree = "<group>"; };
+		4DE4404F1369A4D00016E5BF /* wherewereweTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wherewereweTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DE440131369A4CF0016E5BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE4401B1369A4CF0016E5BF /* UIKit.framework in Frameworks */,
+				4DE4401D1369A4CF0016E5BF /* Foundation.framework in Frameworks */,
+				4DE4401F1369A4CF0016E5BF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE4403C1369A4CF0016E5BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE440411369A4D00016E5BF /* UIKit.framework in Frameworks */,
+				4DE440421369A4D00016E5BF /* Foundation.framework in Frameworks */,
+				4DE440431369A4D00016E5BF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DE4400B1369A4CF0016E5BF = {
+			isa = PBXGroup;
+			children = (
+				4DE440201369A4CF0016E5BF /* wherewerewe */,
+				4DE440461369A4D00016E5BF /* wherewereweTests */,
+				4DE440191369A4CF0016E5BF /* Frameworks */,
+				4DE440171369A4CF0016E5BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DE440171369A4CF0016E5BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DE440161369A4CF0016E5BF /* wherewerewe.app */,
+				4DE440401369A4CF0016E5BF /* wherewereweTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DE440191369A4CF0016E5BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DE4401A1369A4CF0016E5BF /* UIKit.framework */,
+				4DE4401C1369A4CF0016E5BF /* Foundation.framework */,
+				4DE4401E1369A4CF0016E5BF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DE440201369A4CF0016E5BF /* wherewerewe */ = {
+			isa = PBXGroup;
+			children = (
+				4DE440291369A4CF0016E5BF /* wherewereweAppDelegate.h */,
+				4DE4402A1369A4CF0016E5BF /* wherewereweAppDelegate.m */,
+				4DE4402C1369A4CF0016E5BF /* MainWindow.xib */,
+				4DE4402F1369A4CF0016E5BF /* FirstViewController.h */,
+				4DE440301369A4CF0016E5BF /* FirstViewController.m */,
+				4DE440321369A4CF0016E5BF /* SecondViewController.h */,
+				4DE440331369A4CF0016E5BF /* SecondViewController.m */,
+				4DE440351369A4CF0016E5BF /* FirstView.xib */,
+				4DE440381369A4CF0016E5BF /* SecondView.xib */,
+				4DE440211369A4CF0016E5BF /* Supporting Files */,
+			);
+			path = wherewerewe;
+			sourceTree = "<group>";
+		};
+		4DE440211369A4CF0016E5BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DE440221369A4CF0016E5BF /* wherewerewe-Info.plist */,
+				4DE440231369A4CF0016E5BF /* InfoPlist.strings */,
+				4DE440261369A4CF0016E5BF /* wherewerewe-Prefix.pch */,
+				4DE440271369A4CF0016E5BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DE440461369A4D00016E5BF /* wherewereweTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE4404D1369A4D00016E5BF /* wherewereweTests.h */,
+				4DE4404F1369A4D00016E5BF /* wherewereweTests.m */,
+				4DE440471369A4D00016E5BF /* Supporting Files */,
+			);
+			path = wherewereweTests;
+			sourceTree = "<group>";
+		};
+		4DE440471369A4D00016E5BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DE440481369A4D00016E5BF /* wherewereweTests-Info.plist */,
+				4DE440491369A4D00016E5BF /* InfoPlist.strings */,
+				4DE4404C1369A4D00016E5BF /* wherewereweTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DE440151369A4CF0016E5BF /* wherewerewe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE440531369A4D00016E5BF /* Build configuration list for PBXNativeTarget "wherewerewe" */;
+			buildPhases = (
+				4DE440121369A4CF0016E5BF /* Sources */,
+				4DE440131369A4CF0016E5BF /* Frameworks */,
+				4DE440141369A4CF0016E5BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wherewerewe;
+			productName = wherewerewe;
+			productReference = 4DE440161369A4CF0016E5BF /* wherewerewe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DE4403F1369A4CF0016E5BF /* wherewereweTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE440561369A4D00016E5BF /* Build configuration list for PBXNativeTarget "wherewereweTests" */;
+			buildPhases = (
+				4DE4403B1369A4CF0016E5BF /* Sources */,
+				4DE4403C1369A4CF0016E5BF /* Frameworks */,
+				4DE4403D1369A4CF0016E5BF /* Resources */,
+				4DE4403E1369A4CF0016E5BF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE440451369A4D00016E5BF /* PBXTargetDependency */,
+			);
+			name = wherewereweTests;
+			productName = wherewereweTests;
+			productReference = 4DE440401369A4CF0016E5BF /* wherewereweTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DE4400D1369A4CF0016E5BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Unboxed Consulting";
+			};
+			buildConfigurationList = 4DE440101369A4CF0016E5BF /* Build configuration list for PBXProject "wherewerewe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4DE4400B1369A4CF0016E5BF;
+			productRefGroup = 4DE440171369A4CF0016E5BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DE440151369A4CF0016E5BF /* wherewerewe */,
+				4DE4403F1369A4CF0016E5BF /* wherewereweTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DE440141369A4CF0016E5BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE440251369A4CF0016E5BF /* InfoPlist.strings in Resources */,
+				4DE4402E1369A4CF0016E5BF /* MainWindow.xib in Resources */,
+				4DE440371369A4CF0016E5BF /* FirstView.xib in Resources */,
+				4DE4403A1369A4CF0016E5BF /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE4403D1369A4CF0016E5BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE4404B1369A4D00016E5BF /* InfoPlist.strings in Resources */,
+				4DE4404E1369A4D00016E5BF /* wherewereweTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DE4403E1369A4CF0016E5BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DE440121369A4CF0016E5BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE440281369A4CF0016E5BF /* main.m in Sources */,
+				4DE4402B1369A4CF0016E5BF /* wherewereweAppDelegate.m in Sources */,
+				4DE440311369A4CF0016E5BF /* FirstViewController.m in Sources */,
+				4DE440341369A4CF0016E5BF /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE4403B1369A4CF0016E5BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE440501369A4D00016E5BF /* wherewereweTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DE440451369A4D00016E5BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE440151369A4CF0016E5BF /* wherewerewe */;
+			targetProxy = 4DE440441369A4D00016E5BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DE440231369A4CF0016E5BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE440241369A4CF0016E5BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4DE4402C1369A4CF0016E5BF /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE4402D1369A4CF0016E5BF /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		4DE440351369A4CF0016E5BF /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE440361369A4CF0016E5BF /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		4DE440381369A4CF0016E5BF /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE440391369A4CF0016E5BF /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		4DE440491369A4D00016E5BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE4404A1369A4D00016E5BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DE440511369A4D00016E5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4DE440521369A4D00016E5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		4DE440541369A4D00016E5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
+				INFOPLIST_FILE = "wherewerewe/wherewerewe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4DE440551369A4D00016E5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wherewerewe/wherewerewe-Prefix.pch";
+				INFOPLIST_FILE = "wherewerewe/wherewerewe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4DE440571369A4D00016E5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wherewerewe.app/wherewerewe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wherewereweTests/wherewereweTests-Prefix.pch";
+				INFOPLIST_FILE = "wherewereweTests/wherewereweTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4DE440581369A4D00016E5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wherewerewe.app/wherewerewe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wherewereweTests/wherewereweTests-Prefix.pch";
+				INFOPLIST_FILE = "wherewereweTests/wherewereweTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DE440101369A4CF0016E5BF /* Build configuration list for PBXProject "wherewerewe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE440511369A4D00016E5BF /* Debug */,
+				4DE440521369A4D00016E5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE440531369A4D00016E5BF /* Build configuration list for PBXNativeTarget "wherewerewe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE440541369A4D00016E5BF /* Debug */,
+				4DE440551369A4D00016E5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4DE440561369A4D00016E5BF /* Build configuration list for PBXNativeTarget "wherewereweTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE440571369A4D00016E5BF /* Debug */,
+				4DE440581369A4D00016E5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DE4400D1369A4CF0016E5BF /* Project object */;
+}
