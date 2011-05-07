@@ -5,6 +5,5 @@
 build/*
 
 # ignore machine specific file
-FanApp.xcodeproj/borja_old.pbxuser
-FanApp.xcodeproj/borja_old.mode1v3
 xcuserdata
+*.xcworkspace
