@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D286C64136AA14700C0490D /* MSFindSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C62136AA14700C0490D /* MSFindSeriesViewController.m */; };
+		4D286C65136AA14700C0490D /* MSFindSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C62136AA14700C0490D /* MSFindSeriesViewController.m */; };
+		4D286C66136AA14700C0490D /* MSFindSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C63136AA14700C0490D /* MSFindSeriesViewController.xib */; };
+		4D286C67136AA14700C0490D /* MSFindSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C63136AA14700C0490D /* MSFindSeriesViewController.xib */; };
+		4D286C6B136AA19300C0490D /* MSWatchSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C69136AA19300C0490D /* MSWatchSeriesViewController.m */; };
+		4D286C6C136AA19300C0490D /* MSWatchSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C69136AA19300C0490D /* MSWatchSeriesViewController.m */; };
+		4D286C6D136AA19300C0490D /* MSWatchSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C6A136AA19300C0490D /* MSWatchSeriesViewController.xib */; };
+		4D286C6E136AA19300C0490D /* MSWatchSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C6A136AA19300C0490D /* MSWatchSeriesViewController.xib */; };
 		4DE4401B1369A4CF0016E5BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401A1369A4CF0016E5BF /* UIKit.framework */; };
 		4DE4401D1369A4CF0016E5BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401C1369A4CF0016E5BF /* Foundation.framework */; };
 		4DE4401F1369A4CF0016E5BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401E1369A4CF0016E5BF /* CoreGraphics.framework */; };
@@ -37,27 +45,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D286C61136AA14600C0490D /* MSFindSeriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFindSeriesViewController.h; sourceTree = "<group>"; };
+		4D286C62136AA14700C0490D /* MSFindSeriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFindSeriesViewController.m; sourceTree = "<group>"; };
+		4D286C63136AA14700C0490D /* MSFindSeriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFindSeriesViewController.xib; sourceTree = "<group>"; };
+		4D286C68136AA19300C0490D /* MSWatchSeriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWatchSeriesViewController.h; sourceTree = "<group>"; };
+		4D286C69136AA19300C0490D /* MSWatchSeriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWatchSeriesViewController.m; sourceTree = "<group>"; };
+		4D286C6A136AA19300C0490D /* MSWatchSeriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSWatchSeriesViewController.xib; sourceTree = "<group>"; };
 		4DE440161369A4CF0016E5BF /* wherewerewe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wherewerewe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE4401A1369A4CF0016E5BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DE4401C1369A4CF0016E5BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DE4401E1369A4CF0016E5BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4DE440221369A4CF0016E5BF /* wherewerewe-Info.plist */ = {isa = PBXFileReference; path = "wherewerewe-Info.plist"; sourceTree = "<group>"; };
+		4DE440221369A4CF0016E5BF /* wherewerewe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wherewerewe-Info.plist"; sourceTree = "<group>"; };
 		4DE440241369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4DE440261369A4CF0016E5BF /* wherewerewe-Prefix.pch */ = {isa = PBXFileReference; path = "wherewerewe-Prefix.pch"; sourceTree = "<group>"; };
+		4DE440261369A4CF0016E5BF /* wherewerewe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wherewerewe-Prefix.pch"; sourceTree = "<group>"; };
 		4DE440271369A4CF0016E5BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4DE440291369A4CF0016E5BF /* wherewereweAppDelegate.h */ = {isa = PBXFileReference; path = wherewereweAppDelegate.h; sourceTree = "<group>"; };
+		4DE440291369A4CF0016E5BF /* wherewereweAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wherewereweAppDelegate.h; sourceTree = "<group>"; };
 		4DE4402A1369A4CF0016E5BF /* wherewereweAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wherewereweAppDelegate.m; sourceTree = "<group>"; };
 		4DE4402D1369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4DE4402F1369A4CF0016E5BF /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		4DE4402F1369A4CF0016E5BF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		4DE440301369A4CF0016E5BF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		4DE440321369A4CF0016E5BF /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		4DE440321369A4CF0016E5BF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		4DE440331369A4CF0016E5BF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		4DE440361369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
 		4DE440391369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		4DE440401369A4CF0016E5BF /* wherewereweTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wherewereweTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DE440481369A4D00016E5BF /* wherewereweTests-Info.plist */ = {isa = PBXFileReference; path = "wherewereweTests-Info.plist"; sourceTree = "<group>"; };
+		4DE440481369A4D00016E5BF /* wherewereweTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wherewereweTests-Info.plist"; sourceTree = "<group>"; };
 		4DE4404A1369A4D00016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4DE4404C1369A4D00016E5BF /* wherewereweTests-Prefix.pch */ = {isa = PBXFileReference; path = "wherewereweTests-Prefix.pch"; sourceTree = "<group>"; };
+		4DE4404C1369A4D00016E5BF /* wherewereweTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wherewereweTests-Prefix.pch"; sourceTree = "<group>"; };
 		4DE4404D1369A4D00016E5BF /* wherewereweTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wherewereweTests.h; sourceTree = "<group>"; };
 		4DE4404F1369A4D00016E5BF /* wherewereweTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wherewereweTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +100,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DD748AE13746C3B002A9D63 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				4DE440351369A4CF0016E5BF /* FirstView.xib */,
+				4DE4402C1369A4CF0016E5BF /* MainWindow.xib */,
+				4D286C63136AA14700C0490D /* MSFindSeriesViewController.xib */,
+				4D286C6A136AA19300C0490D /* MSWatchSeriesViewController.xib */,
+				4DE440381369A4CF0016E5BF /* SecondView.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		4DD748B013746C53002A9D63 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4DD748B113746C60002A9D63 /* View Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4DD748B113746C60002A9D63 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DE4402F1369A4CF0016E5BF /* FirstViewController.h */,
+				4DE440301369A4CF0016E5BF /* FirstViewController.m */,
+				4D286C61136AA14600C0490D /* MSFindSeriesViewController.h */,
+				4D286C62136AA14700C0490D /* MSFindSeriesViewController.m */,
+				4D286C68136AA19300C0490D /* MSWatchSeriesViewController.h */,
+				4D286C69136AA19300C0490D /* MSWatchSeriesViewController.m */,
+				4DE440321369A4CF0016E5BF /* SecondViewController.h */,
+				4DE440331369A4CF0016E5BF /* SecondViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		4DE4400B1369A4CF0016E5BF = {
 			isa = PBXGroup;
 			children = (
@@ -118,15 +167,10 @@
 		4DE440201369A4CF0016E5BF /* wherewerewe */ = {
 			isa = PBXGroup;
 			children = (
+				4DD748B013746C53002A9D63 /* Classes */,
+				4DD748AE13746C3B002A9D63 /* Nibs */,
 				4DE440291369A4CF0016E5BF /* wherewereweAppDelegate.h */,
 				4DE4402A1369A4CF0016E5BF /* wherewereweAppDelegate.m */,
-				4DE4402C1369A4CF0016E5BF /* MainWindow.xib */,
-				4DE4402F1369A4CF0016E5BF /* FirstViewController.h */,
-				4DE440301369A4CF0016E5BF /* FirstViewController.m */,
-				4DE440321369A4CF0016E5BF /* SecondViewController.h */,
-				4DE440331369A4CF0016E5BF /* SecondViewController.m */,
-				4DE440351369A4CF0016E5BF /* FirstView.xib */,
-				4DE440381369A4CF0016E5BF /* SecondView.xib */,
 				4DE440211369A4CF0016E5BF /* Supporting Files */,
 			);
 			path = wherewerewe;
@@ -237,6 +281,8 @@
 				4DE4402E1369A4CF0016E5BF /* MainWindow.xib in Resources */,
 				4DE440371369A4CF0016E5BF /* FirstView.xib in Resources */,
 				4DE4403A1369A4CF0016E5BF /* SecondView.xib in Resources */,
+				4D286C66136AA14700C0490D /* MSFindSeriesViewController.xib in Resources */,
+				4D286C6D136AA19300C0490D /* MSWatchSeriesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +292,8 @@
 			files = (
 				4DE4404B1369A4D00016E5BF /* InfoPlist.strings in Resources */,
 				4DE4404E1369A4D00016E5BF /* wherewereweTests.h in Resources */,
+				4D286C67136AA14700C0490D /* MSFindSeriesViewController.xib in Resources */,
+				4D286C6E136AA19300C0490D /* MSWatchSeriesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +324,8 @@
 				4DE4402B1369A4CF0016E5BF /* wherewereweAppDelegate.m in Sources */,
 				4DE440311369A4CF0016E5BF /* FirstViewController.m in Sources */,
 				4DE440341369A4CF0016E5BF /* SecondViewController.m in Sources */,
+				4D286C64136AA14700C0490D /* MSFindSeriesViewController.m in Sources */,
+				4D286C6B136AA19300C0490D /* MSWatchSeriesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE440501369A4D00016E5BF /* wherewereweTests.m in Sources */,
+				4D286C65136AA14700C0490D /* MSFindSeriesViewController.m in Sources */,
+				4D286C6C136AA19300C0490D /* MSWatchSeriesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +516,7 @@
 				4DE440551369A4D00016E5BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE440561369A4D00016E5BF /* Build configuration list for PBXNativeTarget "wherewereweTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +525,7 @@
 				4DE440581369A4D00016E5BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

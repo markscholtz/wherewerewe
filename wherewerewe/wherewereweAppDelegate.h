@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface wherewereweAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-
+@interface wherewereweAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> 
+{
+    IBOutlet UINavigationController* findNavigationController;
+    IBOutlet UINavigationController* watchNavigationController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end
