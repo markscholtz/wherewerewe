@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D286C64136AA14700C0490D /* MSFindSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C62136AA14700C0490D /* MSFindSeriesViewController.m */; };
-		4D286C65136AA14700C0490D /* MSFindSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C62136AA14700C0490D /* MSFindSeriesViewController.m */; };
-		4D286C66136AA14700C0490D /* MSFindSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C63136AA14700C0490D /* MSFindSeriesViewController.xib */; };
-		4D286C67136AA14700C0490D /* MSFindSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C63136AA14700C0490D /* MSFindSeriesViewController.xib */; };
-		4D286C6B136AA19300C0490D /* MSWatchSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C69136AA19300C0490D /* MSWatchSeriesViewController.m */; };
-		4D286C6C136AA19300C0490D /* MSWatchSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C69136AA19300C0490D /* MSWatchSeriesViewController.m */; };
-		4D286C6D136AA19300C0490D /* MSWatchSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C6A136AA19300C0490D /* MSWatchSeriesViewController.xib */; };
-		4D286C6E136AA19300C0490D /* MSWatchSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C6A136AA19300C0490D /* MSWatchSeriesViewController.xib */; };
+		4D286C64136AA14700C0490D /* MSSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C62136AA14700C0490D /* MSSeriesViewController.m */; };
+		4D286C65136AA14700C0490D /* MSSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C62136AA14700C0490D /* MSSeriesViewController.m */; };
+		4D286C66136AA14700C0490D /* MSSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C63136AA14700C0490D /* MSSeriesViewController.xib */; };
+		4D286C67136AA14700C0490D /* MSSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C63136AA14700C0490D /* MSSeriesViewController.xib */; };
 		4DD748CB13751E6F002A9D63 /* MSSeasonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748C913751E6E002A9D63 /* MSSeasonsViewController.m */; };
 		4DD748CC13751E6F002A9D63 /* MSSeasonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748C913751E6E002A9D63 /* MSSeasonsViewController.m */; };
 		4DD748CD13751E6F002A9D63 /* MSSeasonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD748CA13751E6F002A9D63 /* MSSeasonsViewController.xib */; };
@@ -53,12 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D286C61136AA14600C0490D /* MSFindSeriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFindSeriesViewController.h; sourceTree = "<group>"; };
-		4D286C62136AA14700C0490D /* MSFindSeriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFindSeriesViewController.m; sourceTree = "<group>"; };
-		4D286C63136AA14700C0490D /* MSFindSeriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSFindSeriesViewController.xib; sourceTree = "<group>"; };
-		4D286C68136AA19300C0490D /* MSWatchSeriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWatchSeriesViewController.h; sourceTree = "<group>"; };
-		4D286C69136AA19300C0490D /* MSWatchSeriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWatchSeriesViewController.m; sourceTree = "<group>"; };
-		4D286C6A136AA19300C0490D /* MSWatchSeriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSWatchSeriesViewController.xib; sourceTree = "<group>"; };
+		4D286C61136AA14600C0490D /* MSSeriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSeriesViewController.h; sourceTree = "<group>"; };
+		4D286C62136AA14700C0490D /* MSSeriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSeriesViewController.m; sourceTree = "<group>"; };
+		4D286C63136AA14700C0490D /* MSSeriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSeriesViewController.xib; sourceTree = "<group>"; };
 		4DD748C813751E6D002A9D63 /* MSSeasonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSeasonsViewController.h; sourceTree = "<group>"; };
 		4DD748C913751E6E002A9D63 /* MSSeasonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSeasonsViewController.m; sourceTree = "<group>"; };
 		4DD748CA13751E6F002A9D63 /* MSSeasonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSeasonsViewController.xib; sourceTree = "<group>"; };
@@ -120,9 +113,8 @@
 				4DE440351369A4CF0016E5BF /* FirstView.xib */,
 				4DE4402C1369A4CF0016E5BF /* MainWindow.xib */,
 				4DD748D113751F3B002A9D63 /* MSEpisodesViewController.xib */,
-				4D286C63136AA14700C0490D /* MSFindSeriesViewController.xib */,
+				4D286C63136AA14700C0490D /* MSSeriesViewController.xib */,
 				4DD748CA13751E6F002A9D63 /* MSSeasonsViewController.xib */,
-				4D286C6A136AA19300C0490D /* MSWatchSeriesViewController.xib */,
 				4DE440381369A4CF0016E5BF /* SecondView.xib */,
 			);
 			name = Nibs;
@@ -143,12 +135,10 @@
 				4DE440301369A4CF0016E5BF /* FirstViewController.m */,
 				4DD748CF13751F3A002A9D63 /* MSEpisodesViewController.h */,
 				4DD748D013751F3B002A9D63 /* MSEpisodesViewController.m */,
-				4D286C61136AA14600C0490D /* MSFindSeriesViewController.h */,
-				4D286C62136AA14700C0490D /* MSFindSeriesViewController.m */,
+				4D286C61136AA14600C0490D /* MSSeriesViewController.h */,
+				4D286C62136AA14700C0490D /* MSSeriesViewController.m */,
 				4DD748C813751E6D002A9D63 /* MSSeasonsViewController.h */,
 				4DD748C913751E6E002A9D63 /* MSSeasonsViewController.m */,
-				4D286C68136AA19300C0490D /* MSWatchSeriesViewController.h */,
-				4D286C69136AA19300C0490D /* MSWatchSeriesViewController.m */,
 				4DE440321369A4CF0016E5BF /* SecondViewController.h */,
 				4DE440331369A4CF0016E5BF /* SecondViewController.m */,
 			);
@@ -301,8 +291,7 @@
 				4DE4402E1369A4CF0016E5BF /* MainWindow.xib in Resources */,
 				4DE440371369A4CF0016E5BF /* FirstView.xib in Resources */,
 				4DE4403A1369A4CF0016E5BF /* SecondView.xib in Resources */,
-				4D286C66136AA14700C0490D /* MSFindSeriesViewController.xib in Resources */,
-				4D286C6D136AA19300C0490D /* MSWatchSeriesViewController.xib in Resources */,
+				4D286C66136AA14700C0490D /* MSSeriesViewController.xib in Resources */,
 				4DD748CD13751E6F002A9D63 /* MSSeasonsViewController.xib in Resources */,
 				4DD748D413751F3C002A9D63 /* MSEpisodesViewController.xib in Resources */,
 			);
@@ -314,8 +303,7 @@
 			files = (
 				4DE4404B1369A4D00016E5BF /* InfoPlist.strings in Resources */,
 				4DE4404E1369A4D00016E5BF /* wherewereweTests.h in Resources */,
-				4D286C67136AA14700C0490D /* MSFindSeriesViewController.xib in Resources */,
-				4D286C6E136AA19300C0490D /* MSWatchSeriesViewController.xib in Resources */,
+				4D286C67136AA14700C0490D /* MSSeriesViewController.xib in Resources */,
 				4DD748CE13751E6F002A9D63 /* MSSeasonsViewController.xib in Resources */,
 				4DD748D513751F3C002A9D63 /* MSEpisodesViewController.xib in Resources */,
 			);
@@ -348,8 +336,7 @@
 				4DE4402B1369A4CF0016E5BF /* wherewereweAppDelegate.m in Sources */,
 				4DE440311369A4CF0016E5BF /* FirstViewController.m in Sources */,
 				4DE440341369A4CF0016E5BF /* SecondViewController.m in Sources */,
-				4D286C64136AA14700C0490D /* MSFindSeriesViewController.m in Sources */,
-				4D286C6B136AA19300C0490D /* MSWatchSeriesViewController.m in Sources */,
+				4D286C64136AA14700C0490D /* MSSeriesViewController.m in Sources */,
 				4DD748CB13751E6F002A9D63 /* MSSeasonsViewController.m in Sources */,
 				4DD748D213751F3C002A9D63 /* MSEpisodesViewController.m in Sources */,
 			);
@@ -360,8 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE440501369A4D00016E5BF /* wherewereweTests.m in Sources */,
-				4D286C65136AA14700C0490D /* MSFindSeriesViewController.m in Sources */,
-				4D286C6C136AA19300C0490D /* MSWatchSeriesViewController.m in Sources */,
+				4D286C65136AA14700C0490D /* MSSeriesViewController.m in Sources */,
 				4DD748CC13751E6F002A9D63 /* MSSeasonsViewController.m in Sources */,
 				4DD748D313751F3C002A9D63 /* MSEpisodesViewController.m in Sources */,
 			);

@@ -6,10 +6,10 @@
 //  Copyright 2011 Unboxed Consulting. All rights reserved.
 //
 
-#import "MSFindSeriesViewController.h"
+#import "MSSeriesViewController.h"
 
 
-@implementation MSFindSeriesViewController
+@implementation MSSeriesViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -198,13 +198,11 @@
     NSLog(@"-------------> %@", [[[tableView cellForRowAtIndexPath:indexPath] textLabel] text]);
     
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
+    MSSeasonsViewController* seasonsVC = [[MSSeasonsViewController alloc] initWithStyle:UITableViewStylePlain];
+
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+     [self.navigationController pushViewController:seasonsVC animated:YES];
+     [seasonsVC release];
 }
 
 @end

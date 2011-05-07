@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSSeasonsViewController.h"
 
 
-@interface MSFindSeriesViewController : UITableViewController 
+@interface MSSeriesViewController : UITableViewController 
 {
     NSMutableArray* sections;
     NSMutableArray* rows;
