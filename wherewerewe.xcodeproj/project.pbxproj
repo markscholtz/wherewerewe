@@ -11,6 +11,8 @@
 		4D286C65136AA14700C0490D /* MSSeriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D286C62136AA14700C0490D /* MSSeriesViewController.m */; };
 		4D286C66136AA14700C0490D /* MSSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C63136AA14700C0490D /* MSSeriesViewController.xib */; };
 		4D286C67136AA14700C0490D /* MSSeriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D286C63136AA14700C0490D /* MSSeriesViewController.xib */; };
+		4DB1EA7D137BAF2C00CDFBA9 /* GenericTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EA7C137BAF2C00CDFBA9 /* GenericTableViewController.m */; };
+		4DB1EA7E137BAF2C00CDFBA9 /* GenericTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EA7C137BAF2C00CDFBA9 /* GenericTableViewController.m */; };
 		4DD748CB13751E6F002A9D63 /* MSSeasonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748C913751E6E002A9D63 /* MSSeasonsViewController.m */; };
 		4DD748CC13751E6F002A9D63 /* MSSeasonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748C913751E6E002A9D63 /* MSSeasonsViewController.m */; };
 		4DD748CD13751E6F002A9D63 /* MSSeasonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD748CA13751E6F002A9D63 /* MSSeasonsViewController.xib */; };
@@ -19,6 +21,10 @@
 		4DD748D313751F3C002A9D63 /* MSEpisodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748D013751F3B002A9D63 /* MSEpisodesViewController.m */; };
 		4DD748D413751F3C002A9D63 /* MSEpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD748D113751F3B002A9D63 /* MSEpisodesViewController.xib */; };
 		4DD748D513751F3C002A9D63 /* MSEpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD748D113751F3B002A9D63 /* MSEpisodesViewController.xib */; };
+		4DD748E013771930002A9D63 /* MSMultiSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748DF1377192E002A9D63 /* MSMultiSelectTableViewCell.m */; };
+		4DD748E113771930002A9D63 /* MSMultiSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748DF1377192E002A9D63 /* MSMultiSelectTableViewCell.m */; };
+		4DD748E41377B6F6002A9D63 /* MSMultiSelectTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748E31377B6F5002A9D63 /* MSMultiSelectTableViewCellController.m */; };
+		4DD748E51377B6F6002A9D63 /* MSMultiSelectTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD748E31377B6F5002A9D63 /* MSMultiSelectTableViewCellController.m */; };
 		4DE4401B1369A4CF0016E5BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401A1369A4CF0016E5BF /* UIKit.framework */; };
 		4DE4401D1369A4CF0016E5BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401C1369A4CF0016E5BF /* Foundation.framework */; };
 		4DE4401F1369A4CF0016E5BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401E1369A4CF0016E5BF /* CoreGraphics.framework */; };
@@ -26,10 +32,6 @@
 		4DE440281369A4CF0016E5BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE440271369A4CF0016E5BF /* main.m */; };
 		4DE4402B1369A4CF0016E5BF /* wherewereweAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4402A1369A4CF0016E5BF /* wherewereweAppDelegate.m */; };
 		4DE4402E1369A4CF0016E5BF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE4402C1369A4CF0016E5BF /* MainWindow.xib */; };
-		4DE440311369A4CF0016E5BF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE440301369A4CF0016E5BF /* FirstViewController.m */; };
-		4DE440341369A4CF0016E5BF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE440331369A4CF0016E5BF /* SecondViewController.m */; };
-		4DE440371369A4CF0016E5BF /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE440351369A4CF0016E5BF /* FirstView.xib */; };
-		4DE4403A1369A4CF0016E5BF /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE440381369A4CF0016E5BF /* SecondView.xib */; };
 		4DE440411369A4D00016E5BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401A1369A4CF0016E5BF /* UIKit.framework */; };
 		4DE440421369A4D00016E5BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401C1369A4CF0016E5BF /* Foundation.framework */; };
 		4DE440431369A4D00016E5BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE4401E1369A4CF0016E5BF /* CoreGraphics.framework */; };
@@ -52,12 +54,20 @@
 		4D286C61136AA14600C0490D /* MSSeriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSeriesViewController.h; sourceTree = "<group>"; };
 		4D286C62136AA14700C0490D /* MSSeriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSeriesViewController.m; sourceTree = "<group>"; };
 		4D286C63136AA14700C0490D /* MSSeriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSeriesViewController.xib; sourceTree = "<group>"; };
+		4DB1EA7B137BAF2C00CDFBA9 /* GenericTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTableViewController.h; sourceTree = "<group>"; };
+		4DB1EA7C137BAF2C00CDFBA9 /* GenericTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewController.m; sourceTree = "<group>"; };
 		4DD748C813751E6D002A9D63 /* MSSeasonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSeasonsViewController.h; sourceTree = "<group>"; };
 		4DD748C913751E6E002A9D63 /* MSSeasonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSeasonsViewController.m; sourceTree = "<group>"; };
 		4DD748CA13751E6F002A9D63 /* MSSeasonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSeasonsViewController.xib; sourceTree = "<group>"; };
 		4DD748CF13751F3A002A9D63 /* MSEpisodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEpisodesViewController.h; sourceTree = "<group>"; };
 		4DD748D013751F3B002A9D63 /* MSEpisodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEpisodesViewController.m; sourceTree = "<group>"; };
 		4DD748D113751F3B002A9D63 /* MSEpisodesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSEpisodesViewController.xib; sourceTree = "<group>"; };
+		4DD748DE1377192C002A9D63 /* MSMultiSelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMultiSelectTableViewCell.h; sourceTree = "<group>"; };
+		4DD748DF1377192E002A9D63 /* MSMultiSelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMultiSelectTableViewCell.m; sourceTree = "<group>"; };
+		4DD748E21377B6F4002A9D63 /* MSMultiSelectTableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMultiSelectTableViewCellController.h; sourceTree = "<group>"; };
+		4DD748E31377B6F5002A9D63 /* MSMultiSelectTableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMultiSelectTableViewCellController.m; sourceTree = "<group>"; };
+		4DD748E71377B820002A9D63 /* MSMultiSelectTableViewCellControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMultiSelectTableViewCellControllerProtocol.h; sourceTree = "<group>"; };
+		4DD749A313790894002A9D63 /* MSMultiSelectTableViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMultiSelectTableViewControllerProtocol.h; sourceTree = "<group>"; };
 		4DE440161369A4CF0016E5BF /* wherewerewe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wherewerewe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE4401A1369A4CF0016E5BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DE4401C1369A4CF0016E5BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,12 +79,6 @@
 		4DE440291369A4CF0016E5BF /* wherewereweAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wherewereweAppDelegate.h; sourceTree = "<group>"; };
 		4DE4402A1369A4CF0016E5BF /* wherewereweAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wherewereweAppDelegate.m; sourceTree = "<group>"; };
 		4DE4402D1369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4DE4402F1369A4CF0016E5BF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		4DE440301369A4CF0016E5BF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		4DE440321369A4CF0016E5BF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		4DE440331369A4CF0016E5BF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		4DE440361369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
-		4DE440391369A4CF0016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		4DE440401369A4CF0016E5BF /* wherewereweTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wherewereweTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE440481369A4D00016E5BF /* wherewereweTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wherewereweTests-Info.plist"; sourceTree = "<group>"; };
 		4DE4404A1369A4D00016E5BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -110,12 +114,10 @@
 		4DD748AE13746C3B002A9D63 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				4DE440351369A4CF0016E5BF /* FirstView.xib */,
 				4DE4402C1369A4CF0016E5BF /* MainWindow.xib */,
 				4DD748D113751F3B002A9D63 /* MSEpisodesViewController.xib */,
 				4D286C63136AA14700C0490D /* MSSeriesViewController.xib */,
 				4DD748CA13751E6F002A9D63 /* MSSeasonsViewController.xib */,
-				4DE440381369A4CF0016E5BF /* SecondView.xib */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -123,6 +125,8 @@
 		4DD748B013746C53002A9D63 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4DD748DE1377192C002A9D63 /* MSMultiSelectTableViewCell.h */,
+				4DD748DF1377192E002A9D63 /* MSMultiSelectTableViewCell.m */,
 				4DD748B113746C60002A9D63 /* View Controllers */,
 			);
 			name = Classes;
@@ -131,18 +135,27 @@
 		4DD748B113746C60002A9D63 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4DE4402F1369A4CF0016E5BF /* FirstViewController.h */,
-				4DE440301369A4CF0016E5BF /* FirstViewController.m */,
+				4DB1EA7B137BAF2C00CDFBA9 /* GenericTableViewController.h */,
+				4DB1EA7C137BAF2C00CDFBA9 /* GenericTableViewController.m */,
 				4DD748CF13751F3A002A9D63 /* MSEpisodesViewController.h */,
 				4DD748D013751F3B002A9D63 /* MSEpisodesViewController.m */,
+				4DD748E21377B6F4002A9D63 /* MSMultiSelectTableViewCellController.h */,
+				4DD748E31377B6F5002A9D63 /* MSMultiSelectTableViewCellController.m */,
 				4D286C61136AA14600C0490D /* MSSeriesViewController.h */,
 				4D286C62136AA14700C0490D /* MSSeriesViewController.m */,
 				4DD748C813751E6D002A9D63 /* MSSeasonsViewController.h */,
 				4DD748C913751E6E002A9D63 /* MSSeasonsViewController.m */,
-				4DE440321369A4CF0016E5BF /* SecondViewController.h */,
-				4DE440331369A4CF0016E5BF /* SecondViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4DD748E61377B7EC002A9D63 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4DD748E71377B820002A9D63 /* MSMultiSelectTableViewCellControllerProtocol.h */,
+				4DD749A313790894002A9D63 /* MSMultiSelectTableViewControllerProtocol.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		4DE4400B1369A4CF0016E5BF = {
@@ -177,6 +190,7 @@
 		4DE440201369A4CF0016E5BF /* wherewerewe */ = {
 			isa = PBXGroup;
 			children = (
+				4DD748E61377B7EC002A9D63 /* Protocols */,
 				4DD748B013746C53002A9D63 /* Classes */,
 				4DD748AE13746C3B002A9D63 /* Nibs */,
 				4DE440291369A4CF0016E5BF /* wherewereweAppDelegate.h */,
@@ -289,8 +303,6 @@
 			files = (
 				4DE440251369A4CF0016E5BF /* InfoPlist.strings in Resources */,
 				4DE4402E1369A4CF0016E5BF /* MainWindow.xib in Resources */,
-				4DE440371369A4CF0016E5BF /* FirstView.xib in Resources */,
-				4DE4403A1369A4CF0016E5BF /* SecondView.xib in Resources */,
 				4D286C66136AA14700C0490D /* MSSeriesViewController.xib in Resources */,
 				4DD748CD13751E6F002A9D63 /* MSSeasonsViewController.xib in Resources */,
 				4DD748D413751F3C002A9D63 /* MSEpisodesViewController.xib in Resources */,
@@ -334,11 +346,12 @@
 			files = (
 				4DE440281369A4CF0016E5BF /* main.m in Sources */,
 				4DE4402B1369A4CF0016E5BF /* wherewereweAppDelegate.m in Sources */,
-				4DE440311369A4CF0016E5BF /* FirstViewController.m in Sources */,
-				4DE440341369A4CF0016E5BF /* SecondViewController.m in Sources */,
 				4D286C64136AA14700C0490D /* MSSeriesViewController.m in Sources */,
 				4DD748CB13751E6F002A9D63 /* MSSeasonsViewController.m in Sources */,
 				4DD748D213751F3C002A9D63 /* MSEpisodesViewController.m in Sources */,
+				4DD748E013771930002A9D63 /* MSMultiSelectTableViewCell.m in Sources */,
+				4DD748E41377B6F6002A9D63 /* MSMultiSelectTableViewCellController.m in Sources */,
+				4DB1EA7D137BAF2C00CDFBA9 /* GenericTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +363,9 @@
 				4D286C65136AA14700C0490D /* MSSeriesViewController.m in Sources */,
 				4DD748CC13751E6F002A9D63 /* MSSeasonsViewController.m in Sources */,
 				4DD748D313751F3C002A9D63 /* MSEpisodesViewController.m in Sources */,
+				4DD748E113771930002A9D63 /* MSMultiSelectTableViewCell.m in Sources */,
+				4DD748E51377B6F6002A9D63 /* MSMultiSelectTableViewCellController.m in Sources */,
+				4DB1EA7E137BAF2C00CDFBA9 /* GenericTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,22 +396,6 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		4DE440351369A4CF0016E5BF /* FirstView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DE440361369A4CF0016E5BF /* en */,
-			);
-			name = FirstView.xib;
-			sourceTree = "<group>";
-		};
-		4DE440381369A4CF0016E5BF /* SecondView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DE440391369A4CF0016E5BF /* en */,
-			);
-			name = SecondView.xib;
-			sourceTree = "<group>";
-		};
 		4DE440491369A4D00016E5BF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -416,6 +416,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -430,6 +431,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

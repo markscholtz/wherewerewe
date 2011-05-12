@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MSEpisodesViewController.h"
 
 
 @interface MSSeasonsViewController : UITableViewController {
-    
+    NSMutableArray* rows;
 }
 
 @end

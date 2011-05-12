@@ -49,8 +49,22 @@
     [super viewDidLoad];
 
     self->sections = [[NSMutableArray alloc] initWithObjects:@"Ant", @"Ball", @"Cat", @"Dog", @"Egg", @"Frog", @"Goat", @"High", @"Inca", nil];    
-    self->rows = [[NSMutableArray alloc] initWithObjects:@"one", @"two", @"three", nil];
+    self->rows = [[NSMutableArray alloc] initWithObjects:@"one", @"two", @"three", nil];   
     
+    
+    self->actionToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 416, 320, 44)];
+    UIBarButtonItem* actionToolbarButton = [[[UIBarButtonItem alloc] initWithTitle:@"No Action"
+                                                                      style:UIBarButtonItemStyleBordered
+                                                                     target:self
+                                                                     action:@selector(noAction:)] autorelease];
+    [self->actionToolbar setItems:[NSArray arrayWithObject:actionToolbarButton]];
+
+    
+	[self.tableView setAllowsSelectionDuringEditing:YES];
+    
+	// Set the state for not editing.
+	[self cancel:self];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -76,12 +90,14 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [[[self view] superview] addSubview:self->actionToolbar];
 }
 
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    [self->actionToolbar removeFromSuperview];
 }
 
 
@@ -95,6 +111,119 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+//---------------------------------------------------------------------------------------------------//
+
+
+
+
+#pragma mark - MSMultiSelectTableViewController Protocol Methods
+
+- (void)updateSelectionCount
+{
+    /*****************************************************************************************************/
+    // Updates the selection count button when selection changes.
+    /*****************************************************************************************************/
+
+	NSInteger count = 0;
+	
+	for (MSMultiSelectTableViewCellController *cellController in [tableGroups objectAtIndex:0])
+	{
+		if ([cellController selected])
+		{
+			count++;
+		}
+	}
+	
+	actionButton.title = [NSString stringWithFormat:@"No action (%ld)", count];
+	actionButton.enabled = (count != 0);
+}
+
+
+- (void)noAction:(id)sender
+{
+    /*****************************************************************************************************/
+    // Clears the selection but otherwise does nothing.
+    /*****************************************************************************************************/
+
+	NSInteger row = 0;
+	for (MSMultiSelectTableViewCellController *cellController in [tableGroups objectAtIndex:0])
+	{
+		[cellController clearSelectionForTableView:self.tableView
+                                         indexPath:[NSIndexPath indexPathForRow:row inSection:0]];
+		row++;
+	}
+}
+
+//---------------------------------------------------------------------------------------------------//
+
+
+
+#pragma mark - Table view editing
+
+- (void)edit:(id)sender
+{
+    [self showActionToolbar:YES];
+    
+    UIBarButtonItem *cancelButton = [[[UIBarButtonItem alloc] initWithTitle:@"Cancel"
+                                                                      style:UIBarButtonItemStyleDone
+                                                                     target:self
+                                                                     action:@selector(cancel:)] autorelease];
+    [self.navigationItem setRightBarButtonItem:cancelButton animated:NO];
+    [self updateSelectionCount];
+    
+    [self.tableView setEditing:YES animated:YES];
+}
+
+
+- (void)cancel:(id)sender
+{
+    [self showActionToolbar:NO];
+    
+    UIBarButtonItem *editButton = [[[UIBarButtonItem alloc] initWithTitle:@"Edit"
+                                                                    style:UIBarButtonItemStylePlain
+                                                                   target:self
+                                                                   action:@selector(edit:)] autorelease];
+    [self.navigationItem setRightBarButtonItem:editButton animated:NO];
+    
+    NSInteger row = 0;
+    for (MSMultiSelectTableViewCellController *cellController in [tableGroups objectAtIndex:0])
+    {
+        [cellController clearSelectionForTableView:self.tableView
+                                         indexPath:[NSIndexPath indexPathForRow:row inSection:0]];
+        row++;
+    }
+    
+    [self.tableView setEditing:NO animated:YES];
+}
+
+
+- (void)showActionToolbar:(BOOL)show
+{
+    /*****************************************************************************************************/
+    // Toggles the "action" toolbar
+    /*****************************************************************************************************/
+	CGRect toolbarFrame = actionToolbar.frame;
+	CGRect tableViewFrame = self.tableView.frame;
+	if (show)
+	{
+		toolbarFrame.origin.y = actionToolbar.superview.frame.size.height - toolbarFrame.size.height;
+		tableViewFrame.size.height -= toolbarFrame.size.height;
+	}
+	else
+	{
+		toolbarFrame.origin.y = actionToolbar.superview.frame.size.height;
+		tableViewFrame.size.height += toolbarFrame.size.height;
+	}
+	
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationBeginsFromCurrentState:YES];
+    
+	actionToolbar.frame = toolbarFrame;
+	self.tableView.frame = tableViewFrame;
+	
+	[UIView commitAnimations];
 }
 
 //---------------------------------------------------------------------------------------------------//
@@ -128,9 +257,7 @@
     }
     
     // Configure the cell...
-    [[cell textLabel] setText:[self->rows objectAtIndex:[indexPath row]]];
-    [[cell detailTextLabel] setText:@"Detail"];
-    
+    [[cell textLabel] setText:[self->rows objectAtIndex:[indexPath row]]];    
     return cell;
 }
 
@@ -147,14 +274,15 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
+    /*****************************************************************************************************/
+    // Specifies editing enabled for all rows.
+    /*****************************************************************************************************/
+
     return YES;
 }
-*/
+
 
 /*
 // Override to support editing the table view.
@@ -199,10 +327,12 @@
     
     // Navigation logic may go here. Create and push another view controller.
     MSSeasonsViewController* seasonsVC = [[MSSeasonsViewController alloc] initWithStyle:UITableViewStylePlain];
-
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:seasonsVC animated:YES];
-     [seasonsVC release];
+    NSString* nextControllerTitle = [[[tableView cellForRowAtIndexPath:indexPath] textLabel] text];
+    [seasonsVC setTitle:nextControllerTitle];
+    
+    // Pass the selected object to the new view controller.
+    [[self navigationController] pushViewController:seasonsVC animated:YES];
+    [seasonsVC release];
 }
 
 @end

@@ -38,7 +38,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    self->rows = [[NSMutableArray alloc] initWithObjects:@"Season 1", @"Season 2", @"Season 3", @"Season 4", @"Season 5", nil];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -83,16 +95,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self->rows count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,6 +115,7 @@
     }
     
     // Configure the cell...
+    [[cell textLabel] setText:[self->rows objectAtIndex:[indexPath row]]];
     
     return cell;
 }
@@ -151,15 +162,15 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+{    
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    MSEpisodesViewController* episodesVC = [[MSEpisodesViewController alloc] initWithStyle:UITableViewStylePlain];
+    NSString* nextControllerTitle = [[[tableView cellForRowAtIndexPath:indexPath] textLabel] text];
+    [episodesVC setTitle:nextControllerTitle];
+    
+    // Pass the selected object to the new view controller.
+    [[self navigationController] pushViewController:episodesVC animated:YES];
+    [episodesVC release];
 }
 
 @end

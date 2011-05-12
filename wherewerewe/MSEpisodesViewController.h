@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MSEpisodesViewController : UITableViewController {
-    
+@interface MSEpisodesViewController : UITableViewController 
+{
+    NSMutableArray* rows;
 }
 
 @end

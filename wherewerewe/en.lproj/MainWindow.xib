@@ -74,9 +74,9 @@
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="207939133">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="686192442">
-						<string key="IBUITitle">Watch</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="924623612">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="505604517">
+						<string key="IBUITitle">Find</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<reference key="IBUITabBar" ref="795333663"/>
 					</object>
@@ -88,7 +88,7 @@
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="331449385">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="502250013">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
@@ -99,13 +99,13 @@
 					</object>
 					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="IBUIViewController" id="975305277">
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="745332790">
+						<object class="IBUIViewController" id="809338727">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="940680293">
 								<reference key="IBUINavigationBar"/>
-								<string key="IBUITitle">Watch Series</string>
+								<string key="IBUITitle">Find Series</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="207939133"/>
+							<reference key="IBUIParentViewController" ref="924623612"/>
 							<string key="IBUINibName">MSSeriesViewController</string>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
@@ -118,9 +118,10 @@
 				</object>
 				<object class="NSMutableArray" key="IBUIViewControllers">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUINavigationController" id="924623612">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="505604517">
-							<string key="IBUITitle">Find</string>
+					<reference ref="924623612"/>
+					<object class="IBUINavigationController" id="207939133">
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="686192442">
+							<string key="IBUITitle">Watch</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							<reference key="IBUITabBar" ref="795333663"/>
 						</object>
@@ -132,7 +133,7 @@
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="502250013">
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="331449385">
 							<nil key="NSNextResponder"/>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrameSize">{0, 0}</string>
@@ -143,12 +144,12 @@
 						</object>
 						<object class="NSMutableArray" key="IBUIViewControllers">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIViewController" id="809338727">
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="940680293">
-									<string key="IBUITitle">Find Series</string>
+							<object class="IBUIViewController" id="975305277">
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="745332790">
+									<string key="IBUITitle">Watch Series</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
-								<reference key="IBUIParentViewController" ref="924623612"/>
+								<reference key="IBUIParentViewController" ref="207939133"/>
 								<string key="IBUINibName">MSSeriesViewController</string>
 								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 									<int key="IBUIInterfaceOrientation">1</int>
@@ -159,7 +160,6 @@
 							</object>
 						</object>
 					</object>
-					<reference ref="207939133"/>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="795333663">
 					<reference key="NSNextResponder"/>
@@ -179,7 +179,7 @@
 						<reference ref="505604517"/>
 						<reference ref="686192442"/>
 					</object>
-					<reference key="IBUISelectedItem" ref="686192442"/>
+					<reference key="IBUISelectedItem" ref="505604517"/>
 				</object>
 			</object>
 		</object>
